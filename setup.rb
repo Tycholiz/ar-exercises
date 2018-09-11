@@ -7,6 +7,7 @@ require_relative 'lib/employee'
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 puts 'Establishing connection to database ...'
+# This will allow Active Record to connect to your Postgres database
 ActiveRecord::Base.establish_connection(
   adapter: 'postgresql',
   database: 'ar_exercises',
